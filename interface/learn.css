@@ -1,19 +1,19 @@
 #learn-page {
     text-align: center;
     margin-top: 20%;
-  }
-  
-  #learn-page h1 {
+}
+
+#learn-page h1 {
     font-size: 2.5rem;
     color: #333;
-  }
-  
-  #learn-page p {
+}
+
+#learn-page p {
     font-size: 1.2rem;
     color: #666;
-  }
-  
-  #learn-page button {
+}
+
+#learn-page button {
     font-size: 1rem;
     padding: 10px 20px;
     background-color: #FF9800;
@@ -22,9 +22,49 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  #learn-page button:hover {
+}
+
+#learn-page button:hover {
     background-color: #FB8C00;
-  }
-  
+}
+
+/* =========================================== */
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    src: url("Montserrat.ttf") format("truetype");
+    font-family: "Montserrat";
+}
+
+div#main {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+div#title {
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
+
+div#content {
+    display: flex;
+    gap: 50px;
+}
+
+.button {
+    text-align: center;
+    padding: 2em 1.5em;
+    border: 2px solid #cccccc;
+    border-radius: 18px;
+}
