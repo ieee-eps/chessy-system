@@ -1,12 +1,12 @@
 const axios = require('axios');  
 
-// Your OpenAI API key  
-const OPENAI_API_KEY = 'YOUR_API_KEY_HERE';  
+ 
+const OPENAI_API_KEY = process.env.KEY;  
 
   
-const fen = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'; // Example FEN (Start position)  
+const fen = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1'; 
 
-// Function to request comments from ChatGPT  
+ 
 const getChessComments = async (fen) => {  
     try {  
         const response = await axios.post('https://api.openai.com/v1/chat/completions', {  
@@ -25,7 +25,7 @@ const getChessComments = async (fen) => {
             }  
         });  
 
-        // Extract and log the response  
+        
         const comment = response.data.choices[0].message.content;  
         console.log('Comments from ChatGPT:');  
         console.log(comment);  
@@ -34,5 +34,5 @@ const getChessComments = async (fen) => {
     }  
 };  
 
-// Call the function with the FEN  
+
 getChessComments(fen);  
