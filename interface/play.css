@@ -1,0 +1,30 @@
+#play-page {
+    text-align: center;
+    margin-top: 20%;
+  }
+  
+  #play-page h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  #play-page p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  #play-page button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #play-page button:hover {
+    background-color: #1E88E5;
+  }
+  

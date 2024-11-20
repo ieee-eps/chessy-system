@@ -1,0 +1,122 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Chessy - Jouer</title>  
+  <link rel="stylesheet" href="chessboard.css">  
+  <link rel="stylesheet" href="styles.css">  
+  <style>  
+    /* Layout styles */  
+    #play-page {  
+      display: flex;  
+      justify-content: center;  
+      align-items: flex-start;  
+      gap: 20px;  
+      margin-top: 20px;  
+    }  
+
+    #board1 {  
+      flex: 1;  
+    }  
+
+    #text-area-container {  
+      flex: 1;  
+      text-align: left;  
+    }  
+
+    textarea {  
+      width: 100%;  
+      height: 300px;  
+      font-size: 1rem;  
+      padding: 10px;  
+      border: 1px solid #ccc;  
+      border-radius: 5px;  
+      resize: none;  
+    }  
+
+    textarea:focus {  
+      border-color: #4CAF50;  
+      outline: none;  
+      box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);  
+    }  
+
+    h1, p {  
+      text-align: center;  
+    }  
+
+    /* Bottom timer layout */  
+    #bottom-timer-container {  
+      display: flex;  
+      justify-content: center;  
+      align-items: center;  
+      margin-top: 20px;  
+    }  
+
+    .timer {  
+      font-size: 2rem;  
+      margin: 0 10px;  
+      padding: 10px;  
+      background-color: #f0f0f0;  
+      border-radius: 5px;  
+      border: 1px solid #ccc;  
+    }  
+
+    .divider {  
+      border-left: 2px solid #ccc;  
+      height: 50px;  /* Adjust height as needed */  
+      margin: 0 10px;  
+    }  
+  </style>  
+</head>  
+<body>  
+  <div>  
+    <h1>Bienvenue dans l'espace de jeu !</h1>  
+    <p>Ici, vous pouvez ajouter votre contenu pour le mode "Jouer".</p>  
+  </div>  
+
+  <div id="play-page">  
+    <!-- Échiquier -->  
+    <div id="board1" style="width: 400px"></div>  
+
+    <!-- Zone de texte -->  
+    <div id="text-area-container">  
+      <h2>Commentaires</h2>  
+      <textarea placeholder="Écrivez vos commentaires ou notes ici..."></textarea>  
+    </div>  
+  </div>  
+
+  <!-- New Bottom Timer -->  
+  <div id="bottom-timer-container">  
+    <div id="timer1" class="timer">05:00</div>  
+    <div class="divider"></div>  
+    <div id="timer2" class="timer">05:00</div>  
+  </div>  
+
+  <script src="jquery.js"></script>  
+  <script src="chessboard.js"></script>  
+
+  <script>  
+    var board1 = Chessboard('board1', 'start');  
+
+    // Function to start timers  
+    function startTimer(timerId, timeLeft) {  
+      const timerElement = document.getElementById(timerId);  
+      const interval = setInterval(function () {  
+        if (timeLeft <= 0) {  
+          clearInterval(interval);  
+        } else {  
+          timeLeft--;  
+          const minutes = Math.floor(timeLeft / 60);  
+          const seconds = timeLeft % 60;  
+          timerElement.textContent = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;  
+        }  
+      }, 1000);  
+    }  
+
+    // Start the timers at 5 minutes (300 seconds)  
+    startTimer('timer1', 300);  
+    startTimer('timer2', 300);  
+  </script>  
+</body>  
+</html>

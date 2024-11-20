@@ -1,0 +1,30 @@
+#learn-page {
+    text-align: center;
+    margin-top: 20%;
+  }
+  
+  #learn-page h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  #learn-page p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  #learn-page button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #learn-page button:hover {
+    background-color: #FB8C00;
+  }
+  
