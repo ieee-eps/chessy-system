@@ -1,0 +1,19 @@
+{
+  "name": "chessy-system",
+  "version": "0.1.1",
+  "description": "Code principal du robot CHESSY",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ieee-eps/chessy-system.git"
+  },
+  "author": "Siwar AJMI & Mohamed-Yassin ROUIS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ieee-eps/chessy-system/issues"
+  },
+  "homepage": "https://github.com/ieee-eps/chessy-system#readme"
+}
