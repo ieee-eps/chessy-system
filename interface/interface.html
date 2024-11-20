@@ -4,18 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chessy Interface</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="interface.css">
 </head>
 <body>
   <div id="splash-screen">
-    <img src="logo.jpg" alt="Logo" id=" logo">
+    <img src="logo.png" alt="Logo" id=" logo">
   </div>
-  <div id="main-content">
-    <h1>CHESSY</h1>
-    <div class="icons">
-        <button id="play-button" onclick="window.location.href='play.html';">🎮 Jouer</button>
-        <button id="learn-button" onclick="window.location.href='learn.html';">📖 Apprendre</button>
-
+  <div id="main">
+    <div id="title">CHESSY</div>
+    <div id="content">
+        <div class="button" id="play-button" onclick="window.location.href='play.html';"><i class="ph-duotone ph-game-controller"></i><span>Jouer</span></div>
+        <div class="button" id="learn-button" onclick="window.location.href='learn.html';"><i class="ph-duotone ph-book-open-text"></i><span>Apprendre</span></div>
     </div>
   </div>
   <script src="interface.js"></script>

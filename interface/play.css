@@ -1,19 +1,23 @@
+h1 {
+    color: #0a5c9a;
+}
+
 #play-page {
     text-align: center;
     margin-top: 20%;
-  }
-  
-  #play-page h1 {
+}
+
+#play-page h1 {
     font-size: 2.5rem;
     color: #333;
-  }
-  
-  #play-page p {
+}
+
+#play-page p {
     font-size: 1.2rem;
     color: #666;
-  }
-  
-  #play-page button {
+}
+
+#play-page button {
     font-size: 1rem;
     padding: 10px 20px;
     background-color: #2196F3;
@@ -22,9 +26,75 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  #play-page button:hover {
+}
+
+#play-page button:hover {
     background-color: #1E88E5;
-  }
-  
+}
+
+#play-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#board1 {
+    flex: 1;
+}
+
+#text-area-container {
+    flex: 1;
+    text-align: left;
+    width: 350px;
+    height: 350px;
+    border: 2px #999 solid;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+
+h1, p {
+    text-align: center;
+}
+
+/* Bottom timer layout */
+#bottom-timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timer {
+    font-size: 2rem;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 3.5em;
+    text-align: center;
+}
+
+.divider {
+    border-left: 2px solid #ccc;
+    height: 50px; /* Adjust height as needed */
+    margin: 0 10px;
+}
+/* =========================================== */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-family: Montserrat;
+}
+
+@font-face {
+    src: url("Montserrat.ttf") format("truetype");
+    font-family: "Montserrat";
+}
