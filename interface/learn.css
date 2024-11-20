@@ -48,23 +48,32 @@ div#main {
     gap: 40px;
     justify-content: center;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 div#title {
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 1.5em;
+    color: #0a5c9a;
 }
 
 div#content {
     display: flex;
-    gap: 50px;
+    gap: 20px;
+    max-width: 95vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .button {
+    color: white;
+    font-weight: bold;
+    background-color: #2196F3;
     text-align: center;
     padding: 2em 1.5em;
     border: 2px solid #cccccc;
     border-radius: 18px;
+    width: 20vw;
 }
